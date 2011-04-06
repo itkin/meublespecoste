@@ -47,9 +47,9 @@
         %h3
           %span.published_on= l(post.published_on)
           \-
-          = post.title
+          = raw post.title
         .content
-          = truncate(post.content, :length => 240)
+          = truncate(raw(post.content), :length => 240)
           = link_to 'voir la suite', post_path(post)
 
 
