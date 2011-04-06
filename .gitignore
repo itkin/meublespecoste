@@ -4,3 +4,4 @@ log/*.log
 tmp/
 public/system
 .idea
+public/stylesheets/compiled/*.css
