@@ -57,6 +57,10 @@ body
             padding: 0 1.6em
             &.last
               padding-right: 0
+            a
+              padding-bottom: 1px
+            a.selected
+              border-bottom: 3px solid $orange
 
       #content
         clear: both
@@ -305,16 +309,15 @@ body #page-wrapper #page.posts #content
 
 
 body #page-wrapper #page.contacts #content
-  .main-text
+  .main-text, form, ul#stores, #map_container
     margin-top: 30px
   form
-    margin-top: 40px
     float: right
-    padding-left: 27px
+    padding-left: 37px
     border-left: 1px solid $light_grey
     .field
       clear: left
-      margin: 20px 0
+      margin: 25px 0
       label
         width: 50px
         float: left
@@ -354,20 +357,19 @@ body #page-wrapper #page.contacts #content
         input, textarea
           border: 1px solid red
 
+  #map_container, ul#stores, #gmaps4rails_map
+    width: 590px
+
   #map_container
     border: 1px solid $light_grey
-    margin-top: 40px
-    width: 590px
     #gmaps4rails_map
       height: 310px
-      width: 590px
 
   ul#stores
-    margin-top: 30px
+    position: relative
     li
       float: left
-      width: 275px
-      margin-right: 20px
+      width: 50%
       .phone_number, .fax_number
         font-weight: bold
       .comment

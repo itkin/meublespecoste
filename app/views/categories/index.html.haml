@@ -12,7 +12,7 @@
   .content
     = raw Content::HOME_MAIN_TEXT.text
     .bottom-link
-      = link_to "VOIR TOUTES NOS RÉALISATIONS  >"
+      = link_to "VOIR TOUTES NOS RÉALISATIONS  >", category_path(Category.first)
 
 
 #contact
@@ -32,7 +32,7 @@
       %span.phone 05.42.21.54.78
 
   .bottom-link
-    = mail_to "contact@meublespecoste.fr", "Nous envoyer un mail >"
+    = link_to contacts_path, "Nous envoyer un mail >"
 
 
 

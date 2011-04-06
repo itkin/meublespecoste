@@ -12,11 +12,11 @@
       #page{:class => "#{params[:action].downcase}_#{params[:controller].downcase} #{params[:controller].downcase}" }
         #header
           %ul.menu
-            %li= link_to Page::HOME.link, root_path
-            %li= link_to Page::CATEGORIES.link , category_path(Category.first)
-            %li= link_to Page::SKILLS.link, skills_path
-            %li= link_to Page::POSTS.link, posts_path
-            %li.last= link_to Page::CONTACT.link, contacts_path
+            %li= link_to Page::HOME.link, root_path, :class => request.path == root_path ? 'selected' : ''
+            %li= link_to Page::CATEGORIES.link , category_path(Category.first), :class => request.path == category_path(Category.first) ? 'selected' : ''
+            %li= link_to Page::SKILLS.link, skills_path, :class => request.path == skills_path ? 'selected' : ''
+            %li= link_to Page::POSTS.link, posts_path, :class => request.path == posts_path ? 'selected' : ''
+            %li.last= link_to Page::CONTACT.link, contacts_path, :class => request.path == contacts_path ? 'selected' : ''
           .spacer
         #content
           = yield
