@@ -1,0 +1,29 @@
+home:
+  name: home
+  link: Accueil
+  title: "BIENVENUE À L’ATELIER <strong>PÉCOSTE</strong>."
+  sub_title: ON BISEAUTE SEC, MON JEUNE AMI.
+
+categories:
+  name: categories
+  link: Nos créations
+  title: "DÉCOUVREZ TOUTES NOS <strong>CRÉATIONS</strong>."
+  sub_title: NOTRE SAVOIR - FAIRE AU SERVICE DE VOS ENVIES..
+
+skills:
+  name: skills
+  link: Notre savoir faire
+  title: "DES <strong>PASSIONÉS</strong> AU SERVICE DU <strong>BEAU MEUBLE</strong>."
+  sub_title: LES ATELIERS PÉCOSTE REGROUPENT DES PROFESSIONELS TALENTUEUX.
+
+posts:
+  name: posts
+  link: Evenements
+  title: "RETROUVEZ TOUTE NOTRE <strong>ACTUALITÉ</strong>."
+  sub_title: RENDEZ VOUS DANS LES SALONS. OU LES CUISINES. HAHA.
+
+contact:
+  name: contact
+  link: Contact
+  title: "POUR NOUS <strong>CONTACTER</strong>."
+

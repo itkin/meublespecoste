@@ -1,0 +1,21 @@
+= form_for @contact, :remote => true do |form|
+  .field.first
+    = form.label :name
+    = form.text_field :name
+  .field
+    = form.label :subject
+    = form.text_field :subject
+  .field
+    = form.label :email
+    = form.text_field :email
+  .field
+    = form.label :message
+    = form.text_area :message
+    #notice
+      = flash[:notice].blank? ? "Nous vous répondrons sous 48H" : flash[:notice]
+      .warning= flash[:warning] unless flash[:warning].blank?
+  .field.buttons
+    = form.submit "ENVOYER >"
+    = link_to "< EFFACER"
+
+

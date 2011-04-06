@@ -1,0 +1,17 @@
+%html
+  %head
+  %body
+    %table{:style => 'border-collapse:collapse;border:none;'}
+      %tr
+        %td Objet :
+        %td= @contact.subject
+      %tr
+        %td Expéditeur :
+        %td= @contact.name
+      %tr
+        %td Email :
+        %td= @contact.email
+      %tr
+        %td Message :
+        %td= @contact.message
+

@@ -1,0 +1,79 @@
+home_main_text:
+  name: home_main_text
+  label: texte principal
+  page: home
+  text: "<p>lorem ipsum dolor sit amet, consectetuer adipiscing elit. sed non risus. suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. cras elementum ultrices diam. maecenas ligula massa, varius</p>
+            <p>lorem ipsum dolor sit amet, consectetuer adipiscing elit. sed non risus. suspendisse lectus tortor, dignissim sit amet, adipiscing nec</p>
+            <p>lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>"
+
+home_events_title:
+  name: home_events_title
+  label: titre sous partie évenements
+  page: home
+  text: "aux dernières <strong>nouvelles</strong> ..."
+
+home_contact_title:
+  name: home_contact_title
+  label: titre sous partie contact
+  page: home
+  text: "nous <strong>contacter</strong>"
+
+categories_main_text:
+  name: categories_main_text
+  label: texte principal page nos créations
+  page: categories
+  text: "lorem ipsum dolor sit amet, consectetuer adipiscing elit. sed non risus. suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. cras elementum ultrices diam. maecenas ligula massa, varius consectetuer adipiscing elit. sed non risus. suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. cras elementum ultrices diam."
+
+categories_bottom_title:
+  name: categories_bottom_title
+  label: titre sous partie "sur mesure"
+  page: categories
+  text: "envie de <strong>sur-mesure</strong> ?"
+
+categories_bottom_text:
+  name: categories_bottom_text
+  label: texte sous partie "sur mesure"
+  page: categories
+  text: "nous serions ravis d’aider.<br/>
+        n’hésitez pas à nous contacter directement par mail, ou nous rendre visite à l’atelier !"
+
+skills_first_text:
+  name: skills_first_text
+  label: Premier texte
+  page: skills
+  text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. TAILLE ADAPTABLE SELON CONTENU !"
+
+skills_second_text:
+  name: skills_second_text
+  label: Second texte
+  page: skills
+  text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. TAILLE ADAPTABLE SELON CONTENU !"
+
+skills_bottom_title:
+  name: skills_bottom_title
+  label: Titre bas de page
+  page: skills
+  text: "A VOTRE <strong>SERVICE</strong>, POUR LE PLAISIR DU TRAVAIL <strong>BIEN FAIT</strong>."
+
+skills_bottom_sub_title:
+  name: skills_bottom_sub_title
+  label: Sous titre bas de page
+  page: skills
+  text: "NOUS SERIONS RAVIS D’AIDER. <br/>
+        N’HÉSITEZ PAS À NOUS CONTACTER DIRECTEMENT PAR MAIL, OU NOUS RENDRE VISITE À L’ATELIER !"
+
+contact_main_text:
+  name: contact_main_text
+  label: Texte principal
+  page: contact
+  text: "Pour toute requête particulière, merci de remplir puis d’envoyer le formulaire à droite de la page."
+
+feed_back_email_subject:
+  name: feed_back_email_subject
+  label: object de l'email d'accusé de réception
+  text: "Bonjour,<br/> Merci de nous avoir adressé un message, nous revenons vers vous dans les plus bref délais<br/>Cordialement<br/><br/>Les meubles Pécoste"
+
+feed_back_email_text:
+  name: feed_back_email_text
+  label: Email d'accusé de réception
+  text: "Bonjour,<br/> Merci de nous avoir adressé un message, nous revenons vers vous dans les plus bref délais<br/>Cordialement<br/><br/>Les meubles Pécoste"

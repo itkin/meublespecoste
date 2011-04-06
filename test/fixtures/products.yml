@@ -1,0 +1,31 @@
+cuisine_1:
+  name: Cuisine en chene
+  image_file_name: product_1.jpg
+  category: cuisine
+  description: "Détails et infos sur la cuistoche, tout ce que tu veux, année, blabla loremp ipsum dolor sit amlet.
+                Produite en 2008, la hauteur de l’image est à adapter à la véritable image, la j’ai pas retouché, sinon
+                ca modifie le reste du layout, j’imagine tu peux utiliser un plug javascript gallerie "
+
+cuisine_2:
+  name: Cuisine moderne
+  image_file_name: product_1.jpg
+  category: cuisine
+  description: "Détails et infos sur la cuistoche, tout ce que tu veux, année, blabla loremp ipsum dolor sit amlet.
+                Produite en 2008, la hauteur de l’image est à adapter à la véritable image, la j’ai pas retouché, sinon
+                ca modifie le reste du layout, j’imagine tu peux utiliser un plug javascript gallerie "
+
+salle_a_mager_1:
+  name: Salle a manger chêne
+  image_file_name: product_1.jpg
+  category: salle_a_manger
+  description: "Détails et infos sur la cuistoche, tout ce que tu veux, année, blabla loremp ipsum dolor sit amlet.
+                Produite en 2008, la hauteur de l’image est à adapter à la véritable image, la j’ai pas retouché, sinon
+                ca modifie le reste du layout, j’imagine tu peux utiliser un plug javascript gallerie "
+
+salle_a_mager_2:
+  name: Salle a manger moderne
+  image_file_name: product_1.jpg
+  category: salle_a_manger
+  description: "Détails et infos sur la cuistoche, tout ce que tu veux, année, blabla loremp ipsum dolor sit amlet.
+                Produite en 2008, la hauteur de l’image est à adapter à la véritable image, la j’ai pas retouché, sinon
+                ca modifie le reste du layout, j’imagine tu peux utiliser un plug javascript gallerie "

@@ -1,0 +1,21 @@
+-#- @stores_array.each do |array|
+-#  = gmaps({"map_options" => { "auto_adjust" => true, "container_id" => "gmap_container_#{array.first.id}", "id" => "gmap_#{array.first.id}"},
+-#           "markers"     => { "data" => array.last } })
+
+%h1= raw Page::CONTACT.title
+%h2= raw Page::CONTACT.sub_title unless Page::CONTACT.sub_title.blank?
+
+.main-text= raw Content::CONTACT_MAIN_TEXT.text
+
+= render :partial => 'form'
+
+-# gmaps4rails(@json)
+%ul#stores
+  - @stores.each do |store|
+    %li
+      .street= store.street
+      .city= [store.zip_code, store.city].join(' ').upcase
+      .phone_number= store.phone_number
+      .fax_number= store.fax_number
+      .comment= raw store.comment
+

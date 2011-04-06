@@ -1,0 +1,31 @@
+les_clayes:
+  name: Magasin Villepreux Les clayes
+  street: 2 ter rue des roses
+  zip_code: 78340
+  city: les clayes sous bois
+  phone_number: 0130561863
+  fax_number:   0130561864
+  comment: "Jours et horaires d’ouverture : <br/>
+                                            <br/>
+            Du Mardi au Vendredi            <br/>
+            9h - 18h sans interruption      <br/>
+                                            <br/>
+            Le Samedi                       <br/>
+            8h30 - 13h"
+
+
+
+ordizan:
+  name: Magasin Ordizan
+  street: 5 chemin des accacias
+  zip_code: 65200
+  city: Ordizan
+  phone_number: 0130561863
+  fax_number:   0130561864
+  comment: "Jours et horaires d’ouverture : <br/>
+                                            <br/>
+            Du Mardi au Vendredi            <br/>
+            9h - 18h sans interruption      <br/>
+                                            <br/>
+            Le Samedi                       <br/>
+            8h30 - 13h"

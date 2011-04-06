@@ -1,0 +1,30 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: <strong>Foire aux meubles</strong>, Saint Gaudens (65)
+  content: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa
+  published_on: 2011-03-02
+
+two:
+  title: <strong>Salon de la pendule</strong>, Bagnères (65)
+  content: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa
+  published_on: 2011-01-08
+
+three:
+  title: <strong>Salon du Meuble</strong>, Bagnères (65)
+  content: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa
+  published_on: 2010-12-18
+
+four:
+  title: <strong>Salon du Meuble</strong>, Bordeau (65)
+  content: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa
+  published_on: 2010-11-18
+
+five:
+  title: <strong>Salon du Meuble</strong>, Agen (65)
+  content: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa
+  published_on: 2010-08-15
+
+six:
+  title: <strong>Salon du Meuble</strong>, Agen (65)
+  content: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa

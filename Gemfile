@@ -5,16 +5,24 @@ gem 'rails', '3.0.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
+#gem 'sqlite3'
+gem 'mysql'
 # Use unicorn as the web server
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
+gem 'meta_where'
+gem 'paperclip'
+gem "active_scaffold_vho"
+gem 'devise'
+gem "jquery-rails"
+gem 'compass'
+gem 'haml'
+
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
-# gem 'ruby-debug'
+gem 'ruby-debug'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 # Bundle the extra gems:
@@ -29,3 +37,7 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+gem "friendly_id"
+gem "will_paginate"
+gem "gmaps4rails"

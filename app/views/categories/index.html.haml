@@ -1,0 +1,55 @@
+%ul#categories
+  - @categories.each do |category|
+    %li
+      = link_to category_path(category) do
+        = image_tag category.image.url
+        %span= category.name
+
+#text
+  %h1= raw Page::HOME.title
+  %h2= raw Page::HOME.sub_title
+
+  .content
+    = raw Content::HOME_MAIN_TEXT.text
+    .bottom-link
+      = link_to "VOIR TOUTES NOS RÉALISATIONS  >"
+
+
+#contact
+  %h1= raw Content::HOME_CONTACT_TITLE.text
+  .content
+    %p
+      17, Rue Dalmais
+      %br/
+      64400 OLORON SAINTE - MARIE
+      %br/
+      %span.phone 05.42.21.54.78
+    %p
+      Zone Monplaisir
+      %br/
+      64800 COARRAZE
+      %br/
+      %span.phone 05.42.21.54.78
+
+  .bottom-link
+    = mail_to "contact@meublespecoste.fr", "Nous envoyer un mail >"
+
+
+
+
+
+
+#posts
+  %h1= raw Content::HOME_EVENTS_TITLE.text
+  %ul
+    - @posts.each do |post|
+      %li
+        %h3
+          %span.published_on= l(post.published_on)
+          \-
+          = post.title
+        .content
+          = truncate(post.content, :length => 240)
+          = link_to 'voir la suite', post_path(post)
+
+

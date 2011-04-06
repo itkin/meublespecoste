@@ -1,0 +1,6 @@
+[submodule "vendor/plugins/constants_in_db"]
+	path = vendor/plugins/constants_in_db
+	url = git@github.com:itkin/constants_in_db.git
+[submodule "public/javascripts/galleria"]
+	path = public/javascripts/galleria
+	url = git://github.com/aino/galleria.git

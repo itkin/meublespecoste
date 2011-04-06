@@ -1,0 +1,11 @@
+%h1= raw Page::SKILLS.title
+%h2= raw Page::SKILLS.sub_title
+
+= image_tag 'skills-1.png', :class => 'first'
+.first-text= raw Content::SKILLS_FIRST_TEXT.text
+= image_tag 'skills-2.png', :class => 'second'
+.second-text= raw Content::SKILLS_SECOND_TEXT.text
+
+.bottom-titles
+  %h1= raw Content::SKILLS_BOTTOM_TITLE.text
+  %h2= raw Content::SKILLS_BOTTOM_SUB_TITLE.text

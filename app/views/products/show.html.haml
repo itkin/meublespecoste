@@ -1,0 +1,7 @@
+= render :layout => 'categories/category_wrapper' do
+  #product_gallery
+    - @product.pictures.each do |picture|
+      = image_tag picture.image.url, :alt => "", :title => ''
+  #product_description
+    .inner-wrapper
+      = @product.description

@@ -1,0 +1,367 @@
+@import "compass/reset"
+@import "compass/utilities/links/unstyled-link"
+
+$orange: #db9d0a
+$grey: #616161
+$light_grey: #a1a1a1
+$dark_grey: #383838
+$white: white
+
+a
+  +unstyled-link
+  cursor: pointer
+
+.spacer
+  clear: both
+  height: 1px
+  line-height: 0.1px
+  font-size: 0.1px
+
+@mixin button($background_image = 'button.png', $width= 280px)
+  background: image-url($background_image) center center no-repeat
+  display: inline-block
+  height: 40px
+  line-height: 40px
+  text-align: center
+  vertical-align: center
+  text-transform: uppercase
+  color: white
+  width: $width
+
+// LAYOUT
+
+body
+  font-family: Gill Sans, arial
+  font-size: 90%
+  line-height: 1.1em
+  background: image_url('background.jpg') left top repeat
+  #page-wrapper
+    background: image_url('layout.jpg') center top no-repeat
+    width: 100%
+    #page
+      margin: 0 auto
+      width: 1000px
+
+      #header
+        .menu
+          font-size: 1.2em
+          margin-top: 160px
+          float: right
+          li
+            float: left
+            padding: 0 2em
+            &.last
+              padding-right: 0
+
+      #content
+        clear: both
+        padding-top: 65px
+        h1
+          font-size: 1.8em
+          line-height: 1.3em
+          strong
+            color: $orange
+        h2
+          font-size: 1.2em
+          line-height: 1em
+          color: $grey
+
+        .bottom-link
+          padding-top: 20px
+          text-align: center
+          a
+            background: image-url('button.png') center center no-repeat
+            cursor: pointer
+            padding: 14px 25px
+            color: white
+            text-transform: uppercase
+            display: inline-block
+
+
+      #bottom
+        clear: both
+        padding-top: 60px
+        padding-bottom: 20px
+        .menu
+          text-align: center
+          font-size: 0.8em
+          a
+            padding: 0 0.5em
+          span
+            color: $orange
+
+
+// INDEX_CATEGORIES
+
+body #page-wrapper #page.index_categories #content
+  #text, #categories
+    height: 330px
+    position: relative
+    margin-bottom: 90px
+
+  #categories
+    float: right
+    margin-left: 20px
+    z-index: 1
+    li
+      float: left
+      a
+        padding: 1px
+        margin: 0 2px
+        background: $dark_grey
+        float: left
+        img
+          float: left
+        span
+          display: block
+          clear: left
+          text-align: center
+          line-height: 35px
+          color: $white
+        &:hover
+          background: $orange
+
+  #text
+    h2
+      margin-bottom: 60px
+    p
+      margin: 30px 0
+
+
+  #contact, #posts
+    position: relative
+    h1
+      margin-bottom: 30px
+
+  #contact
+    z-index: 1
+    float: right
+    margin-left: 40px
+    padding-left: 20px
+    padding-top: 5px
+    border-left: 1px solid $grey
+    width: (127+(3*2))*2 - 10
+
+    p
+      margin-bottom: 20px
+      line-height: 1.2em
+      span.phone
+        font-weight: bold
+
+    a
+      background: image-url('button_mail.png') center center no-repeat
+
+
+
+  #posts
+    li
+      margin-bottom: 30px
+      h3
+        font-size: 1.1em
+        color: $grey
+        margin-bottom: 20px
+        .published_on
+          color: $dark_grey
+      .content
+        a
+          font-weight: bold
+          text-decoration: underline
+          font-size: 0.9em
+
+
+// SHOW_CATEGORIES & SHOW PRODUCTS (same layout)
+
+body #page-wrapper #page.show_categories #content,
+body #page-wrapper #page.show_products #content
+
+  #text .content
+    margin-top: 30px
+    margin-bottom: 65px
+
+  #categories
+    float: left
+    width: 300px
+    li
+      margin-bottom: 10px
+      a
+        +button('button_grey.png')
+        &.selected
+          background-image: image-url('button.png')
+
+  #product_gallery, #products, #product_description
+    width: 640px
+    float: left
+    margin-left: 60px
+  #product_description
+    font-family: arial
+    float: right
+    background: black
+    color: white
+    font-size: 0.8em
+    line-height: 1.2em
+    .inner-wrapper
+      margin-top: 1px
+      margin: 4px
+      margin-bottom: 8px
+
+  #product_gallery
+    height: 355px
+  #products
+    li
+      float: left
+      margin-left: 8px
+      a
+        img
+          padding: 2px
+          background: $grey
+        &:hover img
+          background: $orange
+
+  #sur-mesure
+    clear: both
+    padding-top: 70px
+    h2
+      margin-top: 30px
+      line-height: 2em
+
+
+// SKILLS
+
+body #page-wrapper #page.index_skills #content
+  .first-text, .second-text
+    line-height: 1.5em
+  img.first
+    float: right
+    margin-top: 30px
+    margin-left: 50px
+    margin-right: 70px
+  .first-text
+    margin-top: 120px
+  img.second
+    float: left
+    margin-top: 30px
+    margin-left: 50px
+    margin-right: 120px
+  .second-text
+    clear: right
+    text-align: right
+    padding-top: 50px
+  .bottom-titles
+    clear: both
+    padding-top: 50px
+    text-align: center
+    h1
+      margin-bottom: 30px
+    h2
+      line-height: 2em
+
+body #page-wrapper #page.posts #content
+  #posts
+    margin-top: 60px
+    li
+      padding-top: 15px
+      border-bottom: 1px solid $light_grey
+      h3
+        font-size: 1.1em
+        line-height: 40px
+        height: 40px
+        color: $grey
+        strong
+          color: black
+          text-transform: uppercase
+        .published_on
+          +button('little-button.png', 120px)
+      .content
+        margin-top: 20px
+        a.show_post
+          float: right
+          +button('little-button.png', 120px)
+          margin: 15px 0
+          margin-top: 20px
+          text-transform: lowercase
+          font-size: 1.1em
+
+  .pagination
+    float: right
+    margin-top: 15px
+    text-transform: uppercase
+    color: $light-grey
+    span.disabled
+      display: none
+    span.current
+      color: black
+    a:hover
+      cursor: pointer
+      text-decoration: underline
+
+
+
+body #page-wrapper #page.contacts #content
+  .main-text
+    margin-top: 30px
+  form
+    margin-top: 40px
+    float: right
+    padding-left: 27px
+    border-left: 1px solid $light_grey
+    .field
+      clear: left
+      margin: 20px 0
+      label
+        width: 50px
+        float: left
+        line-height: 1.3em
+        color: $grey
+      input
+        width: 280px
+        border: 1px solid $light_grey
+      textarea
+        border: 1px solid $light_grey
+        margin-top: 15px
+        float: left
+        display: block
+        clear: left
+        width: 330px
+        height: 250px
+      #notice
+        clear: left
+        color: $light_grey
+        .warning
+          color: red
+      &.first
+        margin-top: 0
+      &.buttons
+        a, input
+          float: right
+          +button('button-submit.png')
+          width: 105px
+          margin-left: 10px
+          padding: 0
+          border: 0
+        a
+          background-image: image-url('button-clear.png')
+      .field_with_errors
+        label
+          color: red
+        input, textarea
+          border: 1px solid red
+
+  #map_container
+    border: 1px solid $light_grey
+    margin-top: 40px
+    width: 590px
+    #gmaps4rails_map
+      height: 310px
+      width: 590px
+
+  ul#stores
+    margin-top: 30px
+    li
+      float: left
+      width: 275px
+      margin-right: 20px
+      .phone_number, .fax_number
+        font-weight: bold
+      .comment
+        margin-top: 20px
+

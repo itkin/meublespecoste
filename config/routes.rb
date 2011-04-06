@@ -46,9 +46,22 @@ Meublespecoste::Application.routes.draw do
   #     resources :products
   #   end
 
+
+  resources :categories, :only => [:index, :show] do
+    resources :products, :only => [:show]
+  end
+
+
+  resources :posts, :only => [:index, :show]
+
+  match 'skills/' => 'skills#index'
+
+
+  resources :contacts, :only => [:index, :create]
+
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "categories#index"
 
   # See how all your routes lay out with "rake routes"
 

@@ -1,0 +1,14 @@
+#text
+  %h1= raw Page::CATEGORIES.title
+  %h2= raw Page::CATEGORIES.sub_title
+  .content= raw Content::CATEGORIES_MAIN_TEXT.text
+
+%ul#categories
+  - @categories.each do |category|
+    %li= link_to category.name, category_path(category), :class => ( category == @category ? 'selected' : '' )
+
+= yield
+
+#sur-mesure.bottom-titles
+  %h1= raw Content::CATEGORIES_BOTTOM_TITLE.text
+  %h2= raw Content::CATEGORIES_BOTTOM_TEXT.text

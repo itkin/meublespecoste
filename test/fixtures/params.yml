@@ -1,0 +1,4 @@
+send_feedback_email:
+  name: send_feedback_email
+  label: Envoyer un accusé de réception
+  value: true

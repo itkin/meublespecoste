@@ -1,0 +1,16 @@
+cuisine:
+  name: Cuisines
+  image_file_name: category_2.jpg
+
+salle_a_manger:
+  name: Salle a manger
+  image_file_name: category_2.jpg
+
+vestibules:
+  name: Vestibules
+  image_file_name: category_2.jpg
+
+autres:
+  name: Autres
+  image_file_name: category_2.jpg
+
