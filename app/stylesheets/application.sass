@@ -6,6 +6,7 @@ $grey: #616161
 $light_grey: #a1a1a1
 $dark_grey: #383838
 $white: white
+$black: #3e3e3e
 
 a
   +unstyled-link
@@ -31,6 +32,7 @@ a
 // LAYOUT
 
 body
+  color: $black
   font-family: Gill Sans, arial
   font-size: 90%
   line-height: 1.1em
@@ -43,13 +45,16 @@ body
       width: 1000px
 
       #header
+        background: image-url('logo.png') left bottom no-repeat
         .menu
+          color: $black
           font-size: 1.2em
           margin-top: 160px
+          text-transform: uppercase
           float: right
           li
             float: left
-            padding: 0 2em
+            padding: 0 1.6em
             &.last
               padding-right: 0
 
@@ -57,11 +62,13 @@ body
         clear: both
         padding-top: 65px
         h1
+          text-transform: uppercase
           font-size: 1.8em
           line-height: 1.3em
           strong
             color: $orange
         h2
+          text-transform: uppercase
           font-size: 1.2em
           line-height: 1em
           color: $grey
