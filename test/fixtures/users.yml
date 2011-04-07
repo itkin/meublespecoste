@@ -2,3 +2,10 @@ nicolas:
   email: nicolas.papon@gmail.com
   encrypted_password: $2a$10$p57HkleUWyZLhB8flJ5sF.XkbhZuzS1O.8UeXKfNf2nlo2FKEnCpW
 
+herve:
+  email: cuisinemeuble.pecoste@orange.fr
+  encrypted_password: $2a$10$p57HkleUWyZLhB8flJ5sF.XkbhZuzS1O.8UeXKfNf2nlo2FKEnCpW
+
+guillaume:
+  email: iomka@me.com
+  encrypted_password: $2a$10$p57HkleUWyZLhB8flJ5sF.XkbhZuzS1O.8UeXKfNf2nlo2FKEnCpW
