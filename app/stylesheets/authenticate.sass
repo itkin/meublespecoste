@@ -1,0 +1,59 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset"
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base"
+
+// Import all the default blueprint modules so that we can access their mixins.
+
+@import "blueprint"
+
+// Import the non-default scaffolding module to help us get started.
+@import "blueprint/scaffolding"
+
+
+// Remove the scaffolding when you're ready to start doing visual design.
+// Or leave it in if you're happy with how blueprint looks out-of-the-box
+@include blueprint-scaffolding("body")
+
+body
+  +blueprint-typography(true)
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  #page
+    margin: 20px
+    font-family: arial
+    width: 50em
+    margin: 10px auto
+    #flash
+
+    #auth-box
+      padding: 5px
+      h2, form
+        padding: 5px 10px
+      form
+        +blueprint-form
+        #error_explanation
+          margin 10px 0
+          border: 2px solid red
+          background: white
+          font-weight: bold
+          color: red
+          padding: 5px
+          h2
+            display: none
+          ul
+            padding: 0
+            list-style-type: none
+            margin: 0
+        .field_with_errors
+          input
+            border: 1px solid red
+        .field
+          margin: 10px 0
+      > a
+        float: right
+        margin-right: 10px
+
+

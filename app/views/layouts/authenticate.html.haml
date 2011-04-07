@@ -1,7 +1,12 @@
 %html
+  = stylesheet_link_tag 'jquery-ui-humanity/jquery-ui-1.8.11.custom', 'compiled/authenticate'
   %title ADMIN
 %body
-  #flash
-    .notice= notice
-    .alert= alert
-  = yield
+  #page
+    #flash
+      - unless notice.blank?
+        .notice= notice
+      - unless alert.blank?
+        .error= alert
+    #auth-box.ui-widget.ui-widget-content.ui-corner-all
+      = yield

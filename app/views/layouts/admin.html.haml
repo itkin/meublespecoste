@@ -1,16 +1,26 @@
 %html
   %head
-
     = javascript_include_tag :admin
     = stylesheet_link_tag 'jquery-ui-humanity/jquery-ui-1.8.11.custom', 'compiled/admin'
     = active_scaffold_includes
   %body
-    #tabs
-      %ul
-        %li= link_to "Gammes", "#admin-categories"
-        %li= link_to "Pages & contenus", admin_pages_path
-        %li= link_to "Evenements", admin_posts_path
-        %li= link_to "Administrateurs", admin_users_path
-        %li= link_to "Paramètres", admin_params_path
-      #admin-categories
-        = yield
+    #page
+      = link_to "Voir le site", root_path, :target => "_blank", :id => "popup-website", :class =>"ui-widget-content ui-state-highlight ui-corner-top"
+      #header.ui-widget.ui-widget-header.ui-corner-bottom
+        %h1 ADMIN::MEUBLES-PECOSTE.FR
+      #devise
+        #devise-options
+          Bonjour
+          = "#{current_user.email},"
+          = link_to "déconnection", destroy_user_session_path
+        .notice= notice
+        .alert= alert
+      #tabs
+        %ul
+          %li= link_to "Gammes", "#admin-categories"
+          %li= link_to "Pages & contenus", admin_pages_path
+          %li= link_to "Evenements", admin_posts_path
+          %li= link_to "Administrateurs", admin_users_path
+          %li= link_to "Paramètres", admin_params_path
+        #admin-categories
+          = yield

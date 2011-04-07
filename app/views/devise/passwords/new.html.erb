@@ -1,0 +1,14 @@
+<h2 class="ui-widget-header ui-corner-all">Mot de passe oublié?</h2>
+
+<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <div><%= f.label :email %></div>
+    <div><%= f.email_field :email %></div>
+  </div>
+
+  <p><%= f.submit "Renvoyer moi les instructions de changement de mot de passe" %></p>
+<% end %>
+
+<%= render :partial => "devise/shared/links" %>

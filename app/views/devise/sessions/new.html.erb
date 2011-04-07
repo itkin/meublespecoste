@@ -1,0 +1,22 @@
+<h2 class="ui-widget-header ui-corner-all">Identification</h2>
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
+  <div class="field">
+    <div><%= f.label :email, "E-mail" %><div>
+    <div><%= f.email_field :email %></div>
+  </div>
+
+  <div class="field">
+    <div><%= f.label :password, "Mot de passe" %></div>
+    <div><%= f.password_field :password %></div>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <p><%= f.check_box :remember_me %> <%= f.label :remember_me, "Enregistrer ma session" %></p>
+  <% end -%>
+
+  <p><%= f.submit "Valider" %></p>
+<% end %>
+
+<%= render :partial => "devise/shared/links" %>

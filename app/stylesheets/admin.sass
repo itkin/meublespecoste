@@ -1,12 +1,41 @@
 $orange: #db9d0a
 $grey: #616161
 
-
-div.active-scaffold
-  td.title-column, td.sub_title-column, .title-view, .sub_title-view
-    text-transform: uppercase
-    font-weight: normal
-  td.title-column , .title-view
-    strong
-      color: $orange
-      font-weight: normal
+body
+  margin: 0
+  padding: 0
+  font-family: arial
+  #page
+    margin: 0 20px
+    a#popup-website
+      display: block
+      text-align: center
+      padding: 5px
+      text-decoration: none
+      font-size: 1.2em
+      letter-spacing: 4px
+      color: #893203
+      &:hover
+        text-decoration: underline
+    #header
+      padding: 0 2em
+      text-align: center
+      margin-bottom: 20px
+      font-family: Gill Sans, arial
+    #devise
+      height: 20px
+      margin-bottom: 20px
+      .alert
+        color: red
+      .notice
+        color: green
+      #devise-options
+        float: right
+    div.active-scaffold
+      td.title-column, td.sub_title-column, .title-view, .sub_title-view
+        text-transform: uppercase
+        font-weight: normal
+      td.title-column , .title-view
+        strong
+          color: $orange
+          font-weight: normal

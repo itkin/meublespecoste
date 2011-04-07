@@ -8,6 +8,8 @@
     = yield :head
 
   %body
+    -#- if user_signed_in?
+    -#  = link_to "Voir l'admin", admin_root_path, :id => "admin-link", :class =>"ui-widget-content ui-state-highlight ui-corner-all"
     #page-wrapper
       #page{:class => "#{params[:action].downcase}_#{params[:controller].downcase} #{params[:controller].downcase}" }
         #header
