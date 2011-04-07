@@ -4,4 +4,5 @@ module Admin::ProductsHelper
     str = raw record.pictures.map{|p| image_tag(p.image.url(:admin))}.join('')
     str.blank? ? '-' : str
   end
+
 end
