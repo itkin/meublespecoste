@@ -4,3 +4,6 @@
 [submodule "public/javascripts/galleria"]
 	path = public/javascripts/galleria
 	url = git://github.com/aino/galleria.git
+[submodule "public/javascripts/livequery"]
+	path = public/javascripts/livequery
+	url = git://github.com/brandonaaron/livequery.git
