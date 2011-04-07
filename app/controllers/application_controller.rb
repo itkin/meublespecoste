@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
   def choose_layout
     if request.xhr?
       false
+    elsif devise_controller?
+      'authenticate'
     else
       'application'
     end

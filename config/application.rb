@@ -31,7 +31,8 @@ module Meublespecoste
      config.i18n.default_locale = :fr
 
     # JavaScript files you want as :defaults (application.js is always included).
-    # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+    config.action_view.javascript_expansions[:admin] = %w(jquery-1.4.2/jquery.min jquery-1.4.2/rails)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"

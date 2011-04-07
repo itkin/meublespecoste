@@ -1,4 +1,6 @@
 Meublespecoste::Application.routes.draw do
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -46,6 +48,34 @@ Meublespecoste::Application.routes.draw do
   #     resources :products
   #   end
 
+  devise_for :users
+
+  namespace :admin do
+    resources :users do
+      as_routes
+    end
+    resources :pages do
+      as_routes
+    end
+    resources :contents do
+      as_routes
+    end
+    resources :categories do
+      as_routes
+    end
+    resources :products do
+      as_routes
+    end
+    resources :pictures do
+      as_routes
+    end
+    resources :params do
+      as_routes
+    end
+    resources :posts do
+      as_routes
+    end
+  end
 
   resources :categories, :only => [:index, :show] do
     resources :products, :only => [:show]

@@ -5,7 +5,6 @@ class Category < ActiveRecord::Base
   has_attached_file :image, :styles => { :admin => ['50x50!',:jpg], :default => ['127x293!',:jpg] }
 
   has_many :products
-  has_many :pictures, :as => :attachable
 
 
 end
