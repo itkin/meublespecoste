@@ -18,18 +18,13 @@
 #contact
   %h1= raw Content::HOME_CONTACT_TITLE.text
   .content
-    %p
-      17, Rue Dalmais
-      %br/
-      64400 OLORON SAINTE - MARIE
-      %br/
-      %span.phone 05.42.21.54.78
-    %p
-      Zone Monplaisir
-      %br/
-      64800 COARRAZE
-      %br/
-      %span.phone 05.42.21.54.78
+    %ul
+      - @stores.each do |store|
+        %li
+          %div= store.street
+          %div= [store.zip_code, store.city].join(' ').upcase
+          .phone= "Tel. #{store.phone_number}"
+          .fax= "Fax. #{store.fax_number}"
 
   .bottom-link
     = link_to contacts_path, "Nous envoyer un mail >"

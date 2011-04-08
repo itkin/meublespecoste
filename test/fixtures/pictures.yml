@@ -1,12 +1,15 @@
 image_cuisine_1:
+  position: 1
   image_file_name: picture_1.jpg
   product: cuisine_1
 
 image_cuisine_2:
+  position: 2
   image_file_name: picture_1.jpg
   product: cuisine_1
 
 image_cuisine_3:
+  position: 3
   image_file_name: picture_1.jpg
   product: cuisine_1
 

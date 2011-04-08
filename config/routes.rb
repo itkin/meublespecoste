@@ -65,9 +65,11 @@ Meublespecoste::Application.routes.draw do
     end
     resources :products do
       as_routes
+
     end
     resources :pictures do
       as_routes
+
     end
     resources :params do
       as_routes

@@ -1,4 +1,5 @@
 cuisine_1:
+  position: 1
   name: Cuisine en chene
   image_file_name: product_1.jpg
   category: cuisine
@@ -7,6 +8,7 @@ cuisine_1:
                 ca modifie le reste du layout, j’imagine tu peux utiliser un plug javascript gallerie "
 
 cuisine_2:
+  position: 2
   name: Cuisine moderne
   image_file_name: product_1.jpg
   category: cuisine
@@ -15,6 +17,7 @@ cuisine_2:
                 ca modifie le reste du layout, j’imagine tu peux utiliser un plug javascript gallerie "
 
 salle_a_mager_1:
+  position: 1
   name: Salle a manger chêne
   image_file_name: product_1.jpg
   category: salle_a_manger
@@ -23,6 +26,7 @@ salle_a_mager_1:
                 ca modifie le reste du layout, j’imagine tu peux utiliser un plug javascript gallerie "
 
 salle_a_mager_2:
+  position: 2
   name: Salle a manger moderne
   image_file_name: product_1.jpg
   category: salle_a_manger

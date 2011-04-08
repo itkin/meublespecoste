@@ -4,6 +4,7 @@ class CategoriesController < ApplicationController
 
   def index
     @posts = Post.published.limit(2)
+    @stores = Store.all
   end
 
   def show

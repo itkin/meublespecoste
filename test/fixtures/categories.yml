@@ -1,16 +1,20 @@
 cuisine:
+  position: 1
   name: Cuisines
   image_file_name: category_2.jpg
 
 salle_a_manger:
+  position: 2
   name: Salle a manger
   image_file_name: category_2.jpg
 
 vestibules:
+  position: 3
   name: Vestibules
   image_file_name: category_2.jpg
 
 autres:
+  position: 4
   name: Autres
   image_file_name: category_2.jpg
 

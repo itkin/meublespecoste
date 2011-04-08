@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/itkin/active_scaffold_sortable.git
+  revision: 819543c8abbc6441bbea9b23a4fcf34fc7ee0092
+  specs:
+    active_scaffold_sortable_vho (3.0.1)
+      active_scaffold_vho (~> 3.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -132,6 +139,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_scaffold_sortable_vho!
   active_scaffold_vho
   capistrano
   compass
