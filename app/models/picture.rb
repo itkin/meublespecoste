@@ -4,4 +4,5 @@ class Picture < ActiveRecord::Base
 
   belongs_to :product
 
+  default_scope :order => 'position ASC'
 end
