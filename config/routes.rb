@@ -77,6 +77,9 @@ Meublespecoste::Application.routes.draw do
     resources :posts do
       as_routes
     end
+    resources :stores do
+      as_routes
+    end
     root :to => 'categories#index'
   end
 

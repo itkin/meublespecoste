@@ -54,7 +54,7 @@ $(function(){
   $('textarea.sub_title-input').livequery(function(){
     $(this).titleTiny({skin:'subTitle'});
   });
-  $('textarea.text-input, textarea.content-input').livequery(function(){
+  $('textarea.text-input, textarea.content-input, textarea.comment-input').livequery(function(){
     $(this).titleTiny({
       skin:'default',
       plugins : "advlink, paste",
