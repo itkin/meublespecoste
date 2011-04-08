@@ -1,10 +1,10 @@
 jQuery(function($){
   if (typeof($.datepicker) === 'object') {
-    $.datepicker.regional['fr'] = {"prevText":"Pr\u00e9c\u00e9dent","closeText":"Fermer","monthNamesShort":["jan.","f\u00e9v.","mar.","avr.","mai","juin","juil.","ao\u00fbt","sept.","oct.","nov.","d\u00e9c."],"changeMonth":true,"nextText":"Suivant","showMonthAfterYear":false,"firstDay":1,"weekHeader":"Sm","isRTL":false,"changeYear":true,"dayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"dateFormat":"dd/mm/yy","dayNamesMin":["dim","lun","mar","mer","jeu","ven","sam"],"dayNamesShort":["dim","lun","mar","mer","jeu","ven","sam"],"currentText":"Aujourd'hui","monthNames":["janvier","f\u00e9vrier","mars","avril","mai","juin","juillet","ao\u00fbt","septembre","octobre","novembre","d\u00e9cembre"]};
+    $.datepicker.regional['fr'] = {"showMonthAfterYear":false,"nextText":"Suivant","changeMonth":true,"prevText":"Pr\u00e9c\u00e9dent","closeText":"Fermer","monthNamesShort":["jan.","f\u00e9v.","mar.","avr.","mai","juin","juil.","ao\u00fbt","sept.","oct.","nov.","d\u00e9c."],"firstDay":1,"weekHeader":"Sm","isRTL":false,"changeYear":true,"dayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"dateFormat":"dd/mm/yy","dayNamesMin":["dim","lun","mar","mer","jeu","ven","sam"],"dayNamesShort":["dim","lun","mar","mer","jeu","ven","sam"],"currentText":"Aujourd'hui","monthNames":["janvier","f\u00e9vrier","mars","avril","mai","juin","juillet","ao\u00fbt","septembre","octobre","novembre","d\u00e9cembre"]};
     $.datepicker.setDefaults($.datepicker.regional['fr']);
   }
   if (typeof($.timepicker) === 'object') {
-    $.timepicker.regional['fr'] = {"closeText":"Fermer","ampm":false,"minuteText":"Minute","secondText":"Seconde","dateFormat":"dd %B yy ","timeFormat":"hh:mm:ss","timeText":"Heure","currentText":"Maintenant","hourText":"Heure"};
+    $.timepicker.regional['fr'] = {"closeText":"Fermer","ampm":false,"secondText":"Seconde","minuteText":"Minute","dateFormat":"dd %B yy ","timeFormat":"hh:mm:ss","timeText":"Heure","currentText":"Maintenant","hourText":"Heure"};
     $.timepicker.setDefaults($.timepicker.regional['fr']);
   }
 });

@@ -26,10 +26,6 @@ Meublespecoste::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
-  config.middleware.use ExceptionNotifier,
-    :email_prefix => "[Exception][PECOSTE] ",
-    :sender_address => %{"Exception Notifier" <support@w3bflows.com>},
-    :exception_recipients => %w{nicolas@w3bflows.com}
 
   config.action_mailer.delivery_method = :sendmail
 
