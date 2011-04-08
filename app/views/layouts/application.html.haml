@@ -4,7 +4,7 @@
     = stylesheet_link_tag 'compiled/application.css', :media => 'screen, projection'
     /[if IE]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
-
+    = csrf_meta_tag
     = yield :head
 
   %body

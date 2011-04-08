@@ -3,6 +3,7 @@
     = javascript_include_tag :admin
     = stylesheet_link_tag 'jquery-ui-humanity/jquery-ui-1.8.11.custom', 'compiled/admin'
     = active_scaffold_includes
+    = csrf_meta_tag
   %body
     #page
       = link_to "Voir le site", root_path, :target => "_blank", :id => "popup-website", :class =>"ui-widget-content ui-state-highlight ui-corner-top"
