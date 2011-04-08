@@ -49,8 +49,13 @@ Meublespecoste::Application.configure do
 
 
   config.action_mailer.default_url_options = {
-      :delivery_method => :sendmail,
       :host => 'meublespecoste.fr'
   }
+  config.action_mailer.delivery_method = :sendmail
+
+  config.middleware.use ExceptionNotifier,
+    :email_prefix => "[Exception][PECOSTE] ",
+    :sender_address => %{"Exception Notifier" <support@w3bflows.com>},
+    :exception_recipients => %w{nicolas@w3bflows.com}
 
 end

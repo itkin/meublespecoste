@@ -42,3 +42,4 @@ gem "friendly_id"
 gem "will_paginate"
 gem "gmaps4rails"
 gem "active_scaffold_sortable_vho", :git => "git://github.com/itkin/active_scaffold_sortable.git"
+gem 'exception_notification_rails3', :require => 'exception_notifier'
