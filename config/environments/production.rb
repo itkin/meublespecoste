@@ -49,6 +49,7 @@ Meublespecoste::Application.configure do
 
 
   config.action_mailer.default_url_options = {
+      :delivery_method => :sendmail,
       :host => 'meublespecoste.fr'
   }
 
