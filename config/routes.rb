@@ -1,5 +1,4 @@
 Meublespecoste::Application.routes.draw do
-  devise_for :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -83,17 +82,17 @@ Meublespecoste::Application.routes.draw do
     root :to => 'categories#index'
   end
 
-  resources :categories, :only => [:index, :show] do
-    resources :products, :only => [:show]
+  resources :categories, :only => [:index, :show], :path => 'gammes' do
+    resources :products, :only => [:show], :path => 'creation'
   end
 
 
-  resources :posts, :only => [:index, :show]
+  resources :posts, :only => [:index, :show], :path => 'evenements'
 
-  match 'skills/' => 'skills#index'
+  match 'skills/' => 'skills#index', :path => 'notre-savoir-faire'
 
 
-  resources :contacts, :only => [:index, :create]
+  resources :contacts, :only => [:index, :create], :path => 'contact'
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
