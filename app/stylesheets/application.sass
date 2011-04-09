@@ -327,11 +327,14 @@ body #page-wrapper #page.contacts #content
     margin-top: 30px
   form
     float: right
-    padding-left: 37px
     border-left: 1px solid $light_grey
+
     .field
+      float: left
+      cleat: left
       clear: left
-      margin: 25px 0
+      margin-bottom: 25px
+      margin-left: 37px
       label
         width: 50px
         float: left
@@ -356,6 +359,7 @@ body #page-wrapper #page.contacts #content
       &.first
         margin-top: 0
       &.buttons
+        float: right
         a, input
           float: right
           +button('button-submit.png')
