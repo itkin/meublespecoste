@@ -1,6 +1,6 @@
 %html
   %head
-    = javascript_include_tag :defaults, "galleria/src/galleria", "galleria-theme-meublespecoste/galleria.meublespecoste"
+    = javascript_include_tag :defaults, "galleria/src/galleria", "galleria-theme-meublespecoste/galleria.meublespecoste", :cache => 'application_compiled'
     = stylesheet_link_tag 'compiled/application.css', :media => 'screen, projection'
     /[if IE]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
