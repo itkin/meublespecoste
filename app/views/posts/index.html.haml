@@ -4,14 +4,8 @@
 %ul#posts
   - @posts.each do |post|
     %li.post
-      %h3
-        %span.published_on= l(post.published_on)
-        \-
-        = raw post.title
-      .content
-        = truncate(raw(post.content), :length => 400)
-        = link_to 'En savoir plus', post_path(post), :class => 'show_post'
-        .spacer
-
+      = render :partial => 'post', :object => post, :locals => { :content_length => 400 }
+      = link_to 'En savoir plus', post_path(post), :class => 'show_post'
+      .spacer
 
 = will_paginate @posts, :previous_label => 'page précédente', :next_label => "page suivante", :inner_window => 2

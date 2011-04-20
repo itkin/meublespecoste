@@ -188,6 +188,49 @@ fr:
       full_messages:
         format: "%{attribute} %{message}"
 
+    models:
+      category: Gamme
+      product: Création
+      pictures: Images
+      post: Evenement
+      store: Magasin
+      user: Utilisateur
+      param: Paramètres
+    attributes:
+      category:
+        name: Nom
+        products: Créations
+      product:
+        name: Nom
+        pictures: Images
+        description: Description
+      page:
+        link: Lien
+        title: Titre
+        sub_title: Sous Titre
+        contents: Contenus
+      content:
+        label: Description
+        text: Contenu
+      post:
+        published_on: Date de publication
+        title: Titre
+        content: Contenu
+      store:
+        street: Rue
+        zip_code: Code postal
+        city: Ville
+        phone_number: Téléphone
+        fax_number: Fax
+      user:
+        email: E-mail
+      param:
+        label: Nom
+        value: Valeur
+
+
+
+
   errors:
     messages:
       not_found: "n'a pas été trouvé(e)"

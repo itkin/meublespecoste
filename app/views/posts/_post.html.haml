@@ -1,0 +1,10 @@
+%h3
+  = link_to post_path(post) do
+    %span.published_on= l(post.published_on)
+    \-
+    = raw post.title
+.content
+  - if defined?(content_length)
+    = truncate(raw(post.content), :length => 400)
+  - else
+    = raw(post.content)

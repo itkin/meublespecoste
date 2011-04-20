@@ -2,7 +2,7 @@
   - @categories.each do |category|
     %li
       = link_to category_path(category) do
-        = image_tag category.image.url
+        = image_tag category.image.url(:default)
         %span= category.name
 
 #text
