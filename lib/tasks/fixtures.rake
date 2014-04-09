@@ -17,7 +17,11 @@ namespace :db do
             klass.where("#{key}_file_name IS NOT NULL").each do |instance|
               instance.send "#{key}=", File.new(File.join(Rails.root, "test/fixtures/files/", instance.send("#{key}_file_name")))
               instance.send(key).reprocess!
-              instance.save(:validate => false)
+              begin
+                instance.save(:validate => false)
+              rescue
+              end
+
             end
           end
         end

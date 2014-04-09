@@ -1,0 +1,1 @@
+require Rails.root.join('lib/constants_in_db/lib/constants_in_db')
