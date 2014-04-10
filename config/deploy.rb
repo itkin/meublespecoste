@@ -1,6 +1,5 @@
+require "rvm/capistrano"
 require "bundler/capistrano"
-
-
 
 set :application, "meublespecoste"
 set :repository,  "git@github.com:itkin/meublespecoste.git"
