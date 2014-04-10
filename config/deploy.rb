@@ -23,7 +23,7 @@ role :db,  server, :primary => true
 
 default_run_options[:pty] = true  # Must be set for the password prompt from git to work
 set :deploy_via, :remote_cache
-set :git_enable_submodules, 1
+# set :git_enable_submodules, 1
 
 namespace :deploy do
   task :start do ; end
