@@ -1,24 +1,25 @@
 require "bundler/capistrano"
 
-django = "django.webflows.fr"
+
 
 set :application, "meublespecoste"
 set :repository,  "git@github.com:itkin/meublespecoste.git"
 
 set :scm, :git
-set :deploy_to, "~/meublespecoste"
+set :deploy_to, "~/pecoste"
 
 set :use_sudo, false
 
 set :user, "rails"
-set :password,  Proc.new {Capistrano::CLI.password_prompt("Rails user password on django : ")}
+# set :password,  Proc.new {Capistrano::CLI.password_prompt("Rails user password on django : ")}
 #set :scm_passphrase, "rVmEKX42912"#Proc.new {Capistrano::CLI.password_prompt("Rails user password on django : ")}
 
-set :branch, "master"
+set :branch, "production"
 
-role :web, django
-role :app, django
-role :db,  django, :primary => true
+server = "188.226.187.100"
+role :web, server
+role :app, server
+role :db,  server, :primary => true
 
 default_run_options[:pty] = true  # Must be set for the password prompt from git to work
 set :deploy_via, :remote_cache
