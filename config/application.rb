@@ -33,7 +33,7 @@ module Meublespecoste
 
     # JavaScript files you want as :defaults (application.js is always included).
     config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
-    config.action_view.javascript_expansions[:admin] = %w(jquery-1.4.2/jquery.min jquery-ui.min jquery-1.4.2/rails livequery/jquery.livequery tinymce/jscripts/tiny_mce/tiny_mce tinymce/jscripts/tiny_mce/jquery.tinymce admin)
+    config.action_view.javascript_expansions[:admin] = %w(jquery-1.4.2/jquery.min jquery-ui.min jquery-1.4.2/rails jquery.livequery tinymce/jscripts/tiny_mce/tiny_mce tinymce/jscripts/tiny_mce/jquery.tinymce admin)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"

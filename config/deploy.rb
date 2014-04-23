@@ -4,6 +4,8 @@ require "bundler/capistrano"
 set :application, "meublespecoste"
 set :repository,  "git@github.com:itkin/meublespecoste.git"
 
+set :rvm_type, :system
+
 set :scm, :git
 set :deploy_to, "~/pecoste"
 
