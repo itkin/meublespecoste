@@ -54,6 +54,7 @@ GEM
       net-ssh (>= 2.0.14)
       net-ssh-gateway
       net-ssh-gateway (>= 1.0.0)
+    cocaine (0.3.2)
     coderay (1.1.0)
     compass (0.10.6)
       haml (>= 3.0.4)
@@ -147,6 +148,7 @@ DEPENDENCIES
   active_scaffold_sortable_vho!
   active_scaffold_vho
   capistrano
+  cocaine (~> 0.3.2)
   compass
   devise
   exception_notification_rails3

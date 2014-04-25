@@ -24,6 +24,7 @@ gem 'haml'
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 gem 'pry-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
+gem "cocaine", "~> 0.3.2"
 
 # Bundle the extra gems:
 # gem 'bj'
