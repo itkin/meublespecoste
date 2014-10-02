@@ -7,7 +7,7 @@ class ContactMailer < ActionMailer::Base
   def contact_message(contact)
     @contact = contact
     subject "Un visiteur vous a laissé un message sur meublepecoste.fr"
-    recipients "contact@meublespecostes.fr"
+    recipients "cuisinemeuble.pecoste@orange.fr"
   end
 
   def feed_back_message(contact)
